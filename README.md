@@ -1,9 +1,24 @@
-# Dexies
+# Angular with Dexies JS 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+Dexie.js is a wrapper library for indexedDB - the standard database in the browser. http://dexie.org
 
-## Code scaffolding
+Dexie solves three main issues with the native IndexedDB API:
 
+        - Ambivalent error handling
+        - Poor queries
+        - Code complexity
 
-## Further help
+Dexie provides a neat database API with a well thought-through API design, robust error handling, extendability, change tracking awareness and extended KeyRange support (case insensitive search, set matches and OR operations).
 
+## Website
+
+http://dexie.org
+
+## Install over npm
+
+```sh
+npm install dexie
+
+```
+
+# Contributing
