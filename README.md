@@ -23,34 +23,35 @@ npm install dexie
 ## Code scaffolding
  
 ```sh
-??? ...
-??? e2e                     # End-to-end, integration tests (alternatively `e2e`)
-???node_modules             #
-???src                      # 
-?   ??? app                 #
-?        ??? 
-?   ???assets
-?   ???environments
-?   ???favicon.ico
-?   ???index.html
-?   ???main.ts
-?   ???polyfills.ts
-?   ???styles.css
-?   ???test.ts
-?   ???tsconfig.app.json
-?   ???typings.d.ts
-?   ??? integration         # 
-?   ??? unit                # 
-???.angular-cli.json
-???.editorconfig
-???.gitignore
-???karma.conf.js
-???package.json
-???protractor.conf.js
-???READEME.md
-???tsconfig.json
-???tslint.json
-??? ...
+└...
+└───config
+└───e2e                     # End-to-end, integration tests (alternatively `e2e`)
+└───node_modules             #
+└───src                      # 
+└   └───app 
+└   └───assets
+└   └───environments
+└   └───environments
+└   └───favicon.ico
+└   └───index.html
+└   └───main.ts
+└   └───polyfills.ts
+└   └───styles.css
+└   └───test.ts
+└   └───tsconfig.app.json
+└   └───typings.d.ts
+└   └───integration         # 
+└   └───unit                # 
+└   .angular-cli.json
+└   .editorconfig
+└   .gitignore
+└   karma.conf.js
+└   package.json
+����└   protractor.conf.js
+│   README.md��������������
+└   tsconfig.json
+└   tslint.json
+└   ...
 ```
 
 # Contributing
