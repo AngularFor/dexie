@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+
 import { CItem } from '../..';
 
 @Component({
-  selector: 'app-item-view',
-  templateUrl: './item-view.component.html',
-  styleUrls: ['./item-view.component.css']
+  selector: 'app-view',
+  templateUrl: './view.component.html',
+  styleUrls: ['./view.component.css']
 })
-export class ItemViewComponent implements OnInit {
-
-  name: string = "Lasantha";
+export class ViewComponent implements OnInit {
 
   constructor() { }
 

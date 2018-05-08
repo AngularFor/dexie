@@ -1,12 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { ItemViewComponent } from './components/item-view/item-view.component';
+import { MainComponent } from './components/main/main.component';
+import { ViewComponent } from './components/view/view.component';
 
 const routes: Routes = [
   {
-    path: 'view',
-    component: ItemViewComponent
+    path: '',
+    component: MainComponent,
+    children: [
+      {
+        path: '',
+        component: ViewComponent
+      },
+      {
+        path: 'view',
+        component: ViewComponent
+      }
+    ]
   }
 ]
 
