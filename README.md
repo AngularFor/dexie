@@ -28,12 +28,23 @@ src
 └───app
 │   │
 │   └───item
-│       │   components
+│       └───components
+│       └───modals
+│       └───services
 │       │   controller.ts
 │       │   database.ts
 │       │   index.ts
+│       │   interface.ts
+│       │   item-routing.module.ts
+│       │   item.module.ts
 │       │   ...
-│   
+│   app-routing.module.ts
+│   app.component.css
+│   app.component.html
+│   app.component.spec.ts
+│   app.component.ts
+│   app.module.ts
+│   ...
 └───assets
 │   
 │   ...
