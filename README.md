@@ -24,19 +24,19 @@ npm install dexie
 
 ```
 src   
-?
-????app
-?   ?
-?   ????item
-?       ?   components
-?       ?   controller.ts
-?       ?   database.ts
-?       ?   index.ts
-?       ?   ...
-?   
-????assets
-?   
-?   ...
+│
+└───app
+│   │
+│   └───item
+│       │   components
+│       │   controller.ts
+│       │   database.ts
+│       │   index.ts
+│       │   ...
+│   
+└───assets
+│   
+│   ...
 
 ```
 
