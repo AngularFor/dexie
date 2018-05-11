@@ -6,6 +6,7 @@ import { ItemRoutingModule } from './item-routing.module';
 
 import { MainComponent } from './components/main/main.component';
 import { ViewComponent } from './components/view/view.component';
+import { AddComponent } from './modal/add/add.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { ViewComponent } from './components/view/view.component';
   ],
   declarations: [
     MainComponent,
-    ViewComponent
+    ViewComponent,
+    AddComponent
   ]
 })
 export class ItemModule { }

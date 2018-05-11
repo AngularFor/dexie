@@ -9,33 +9,30 @@ import { CItem } from '../..';
 })
 export class ViewComponent implements OnInit {
 
+  items: any = [];
+
   constructor() { }
 
   ngOnInit() {
+    this.getItems();
   }
 
-  async addItem() {
-    try{
-      let itemController = new CItem();
-      let result = await itemController.createItem();
+  addItem() {
+    let itemController = new CItem();
+    itemController.createItem().then( result => {
       alert('Create new Item: '+ result);
-    } catch (e) {
-      alert(e);
-    }
+    }).catch ( e => {
+      console.log(e);
+    });
   }
 
   getItems() {
-    // let db = new ITEM.DItem();
-    // db.transaction('rw', db.items, async () => {
-    //   // Query:
-    //   let items = await db.items.toArray();
-    //   let stringItmes = "";
-    //   items.forEach(item => {
-    //     stringItmes += JSON.stringify(item);
-    //   });
-    //   // Show result:
-    //   alert("My items: " + stringItmes);
-    // });
+    let itemController = new CItem();
+    itemController.getAllItem().then( items => {
+      this.items = items;
+    }).catch ( e => {
+      console.log(e);
+    });
   }
 
 }

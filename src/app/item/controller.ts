@@ -32,7 +32,12 @@ export class CItem {
     }
 
     getAllItem() {
-
+        return this.dItem.transaction('rw', this.dItem.items, async () => {
+            let items = await this.dItem.items.toArray();
+            return items;
+        }).catch(e => {
+            throw e.stack || e
+        });
     }
 
     getItemById() {
